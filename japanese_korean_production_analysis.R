@@ -66,6 +66,11 @@ int_effects <- paste(int_effects, rand_effects, sep = ' + ')
 # explanation: attitude is within-subjects, so there's a random effect for that
 # and gender is within-items so there's a random effect for that
 
+## To fork off Powerpoint (Role-Play, Winter & Grawunder, 2012) and E-Prime (Brown et al., 2014) task:
+
+# jap <- filter(jap, task == 'epr')
+jap <- filter(jap, task == 'ppt')
+
 ## Loop through variables and perform the following analyses:
 
 for (i in 1:length(variables)) {
